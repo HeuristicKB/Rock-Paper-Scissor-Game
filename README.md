@@ -9,4 +9,6 @@ Run this project on your computer/laptop follow below steps:-
 
 3) Run the .html file in any Web Browser.
 
-                    Preview of project 
+                                                      Preview of project 
+                    
+![Game Preview](https://user-images.githubusercontent.com/97721379/149872223-493c7f7c-b1af-4318-8958-3a1bdf3e6719.jpg)
