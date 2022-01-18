@@ -1,5 +1,5 @@
 # Rock-Paper-Scissor-Game
-This game developed in JavaScript using HTML and CSS.
+This simple game developed in JavaScript using HTML and CSS. This game you can play with your computer.
 
 Run this project on your computer/laptop follow below steps:- 
 
