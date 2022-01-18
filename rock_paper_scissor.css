@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Viaoda+Libre&display=swap&family=Orbitron:wght@400&display=swap&family=Black+Ops+One&display=swap&family=Alfa+Slab+One&display=swap&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	background: url('images/backgroundgif.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+}
+.head_pos{
+	background: blue;
+	border-radius: 10px;
+	border: 4px solid yellow;
+	box-shadow: 0 5px 10px yellow;
+	animation-name: change_background;
+  animation-duration: 10s;
+}
+@keyframes change_background {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+#title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 75px;
+	color: white;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+	animation-name: title_animation;
+  animation-duration: 10s;
+}
+@keyframes title_animation {
+  from {color: green;}
+  to {color: white;}
+}
+
+.score-name{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Black Ops One', cursive;
+	color: green;
+}
+.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+.slide-left p {
+	font-family: 'Marko One', serif;
+	color: red;
+  animation: slide-left 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: -100%;
+    width: 100%;
+  }
+}
+.scoreboard{
+	width: 250px;
+	height: 100px;
+	border: 5px dashed red;
+	background: cyan;
+	border-radius: 10px;
+	margin: 10px auto;
+	position: relative;
+}
+.score_block{
+	width: 650px;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background: white;
+	border: 4px solid black;
+	box-shadow: 0 5px 10px black;
+}
+.score_div{
+	display: flex;
+	justify-content: center;
+}
+.result{
+	text-align: center;
+	font-size: 45px;
+	padding: 20px;
+	/* font-weight: bold; */
+	color: red;
+	font-family: 'Alfa Slab One', cursive;
+}
+.moves{
+	text-align: center;
+}
+.img_pos{
+	display: inline-block;
+	margin: 0 30px;
+}
+.round_border{
+	width: 110px;
+	height: 110px;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 5px;
+	background: gray;
+	box-shadow: 0 7px 10px black;
+}
+.round_choice{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background: gold;
+	box-shadow: 0 7px 10px black;
+}
+#rock_select{
+	border-radius: 50%;
+}
+.round_border:hover{
+	background: white;
+	cursor: pointer;
+}
+.selectWin{
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+	border-radius: 50%;
+	background: gray;
+	box-shadow: 0 7px 10px red;
+	background: limegreen;
+}
+.selectLoose{
+	width: 100px;
+	height: 100px;
+	border: 2px solid limegreen;
+	border-radius: 50%;
+	background: gray;
+	box-shadow: 0 7px 10px limegreen;
+	background: red;
+}
+.selectDraw{
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+	border-radius: 50%;
+	background: gray;
+	box-shadow: 0 7px 10px limegreen;
+	background: yellow;
+}
+.winMove{
+	width: 115px;
+	height: 115px;
+	background: limegreen;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 5px;
+}
+.looseMove{
+	width: 115px;
+	height: 115px;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 5px;
+	background: red;
+}
+.drawMove{
+	width: 115px;
+	height: 115px;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 5px;
+	background: gold;
+}
+.move_text{
+	padding: 10px;
+	text-align: center;
+	
+}
+.btn{
+	font-size: 25px;
+	font-weight: bold;
+	box-shadow: 5px 10px 10px black;
+	margin: 10px;
+	padding: 7px 10px;
+	border-radius: 25px;
+	font-family: 'Nosifer', cursive;
+	background:blue;
+	color: white;
+}
+.btn:hover{
+	background: cyan;
+	color: blue;
+}
+#user_name{
+	position: absolute;
+	top: 30px;
+	left: -40px;
+	border: 1px solid green;
+	border-radius: 5px;
+	background: red;
+	padding: 0 15px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+#comp_name{
+	position: absolute;
+	top: 30px;
+	right: -60px;
+	border: 1px solid green;
+	border-radius: 5px;
+	color: white;
+	background: red;
+	padding: 0 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+#score_update{
+	text-align: center;
+	position:relative ;
+	top: 10px;
+	font-size: 45px;
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 1024px){
+	body{
+		height: 100vh;
+	}
+	.head_pos{
+		margin: 125px auto 75px auto;
+		padding: 10px;
+		width: 850px;
+	}
+	#title{
+		font-size: 100px;
+	}
+	.score_block{
+		width: 700px;
+		height: 320px;
+	}
+	.score-name{
+		font-size: 50px;
+	}
+	#instruction{
+		font-size: 25px;
+	}
+	.result{
+		margin: 30px;
+	}
+	.round_border{
+		width: 175px;
+		height: 175px;
+	}
+	.round_choice{
+		width: 125px;
+		height: 125px;
+	}
+	.move_text{
+		margin: 40px;
+	}
+	.btn{
+		font-size: 35px;
+		padding: 15px;
+	}
+	.selectWin, .selectLoose, .selectDraw{
+		width: 125px;
+		height: 125px;
+	}
+	.winMove, .looseMove, .drawMove{
+		width: 175px;
+		height: 175px;
+	}
+}
+@media (max-width: 768px) {
+	.head_pos{
+		margin: 30px auto;
+		padding: 10px;
+		width: 800px;
+	}
+	#title{
+		font-size: 70px;
+	}
+	.result{
+		margin: 20px;
+		font-size: 40px;
+	}
+	.round_border{
+		width: 150px;
+		height: 150px;
+	}
+	.score_block{
+		width: 600px;
+		height: 300px;
+	}
+	.round_choice{
+		width: 100px;
+		height: 100px;
+	}
+	.selectWin, .selectLoose, .selectDraw{
+		width: 100px;
+		height: 100px;
+	}
+	.winMove, .looseMove, .drawMove{
+		width: 150px;
+		height: 150px;
+	}
+	.move_text{
+		margin: 20px;
+	}
+	.btn{
+		font-size: 25px;
+		padding: 10px;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock-Paper-Scissor</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="rock_paper_scissor.css">
+</head>
+<body>
+	<header class="pt-3">
+		<div class="head_pos container">
+		    <div id="title">Rock Paper Scissor</div>
+		</div>
+	</header>
+	<section class="score_div">
+		<div class="score_block">
+			<div class="score-name">
+				<p>SCORE BOARD</p>
+			</div>
+			<div class="slide-left">
+				<p id="instruction">Score First <strong>5 Points</strong> On Scoreboard And  <strong>Won</strong> The Game.</p>
+			</div>
+			<div class="d-flex flex-row justify-content-around align-items-center px-2">
+			<div>
+				<img id="userSelect" class="round_choice" src="images/user.png">
+			</div>
+			<div class="scoreboard">
+				<p id="user_name">User</p>
+				<p id="score_update"><span id="userScore"></span> : <span id="compScore"></span></p>
+				<p id="comp_name">Computer</p>
+			</div>
+			<div>
+				<img id="compSelect" class="round_choice" src="images/computer.png">
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<div class="result">
+		<p id="result">Welcome In Rock Paper Scissor Game.</p>
+	</div>
+	<div class="moves">
+		<div class="img_pos">
+			<img id="rock_select" class="round_border" src="images/rock.png" alt="Rock_img">
+		</div>
+		<div class="img_pos">
+			<img id="paper_select" class="round_border" src="images/paper.png" alt="Paper_img">
+		</div>
+		<div class="img_pos">
+			<img id="scissor_select" class="round_border" src="images/scissor.png" alt="Scissor_img">
+		</div>
+	</div>
+	<div class="move_text"><button class="btn" id="play" onclick="letsPlay()">Lets Play</button></div>
+
+	<script type="text/javascript" src="rock_paper_scissor.js"></script>
+</body>
+</html>
